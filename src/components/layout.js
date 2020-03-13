@@ -3,8 +3,7 @@ import MainMenu from './MainMenu';
 import {graphql, StaticQuery} from 'gatsby';
 import Helmet from "react-helmet";
 
-// import Header from "./header"
-import styled, {createGlobalStyle} from 'styled-components';
+import {createGlobalStyle} from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap');
@@ -14,11 +13,6 @@ const GlobalStyles = createGlobalStyle`
     margin: 0 !important;
     padding: 0 !important;
   }
-`
-
-const LayoutWrapper = styled.div`
-  max-width: 960px;
-  margin: 0 auto;
 `
 
 const Layout = ({ children }) => (
@@ -41,9 +35,7 @@ const Layout = ({ children }) => (
     </Helmet>} />
       <GlobalStyles />
       <MainMenu />
-      <LayoutWrapper>
-        {children}
-      </LayoutWrapper>
+      {children}
   </div>
 );
 

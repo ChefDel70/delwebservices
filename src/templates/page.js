@@ -1,14 +1,17 @@
 import React from 'react'
 import Layout from '../components/layout'
 import HeroImage from '../components/HeroImage'
-import { Button } from 'react-bootstrap';
+import Intro from '../components/Intro'
+import About from '../components/About'
+import Portfolio from '../components/Portfolio'
+// import { Button } from 'react-bootstrap';
 
 
 export default ({pageContext}) => (
   <Layout>
     <HeroImage />
-      <div>
-        <Button variant="primary">Click Here</Button>
-      </div>
+    <Intro />
+    <About />
+    <Portfolio />
   </Layout>
 );

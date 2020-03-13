@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const MainMenuWrapper = styled.div`
   display: flex;
-  background-color: rgb(3, 27, 77);
+  background-color: black;
 `
 
 const MenuItem = styled(Link)`
@@ -17,6 +17,7 @@ const MainMenuInner = styled.div`
   max-width: 960px;
   margin: 0 auto;
   display: flex;
+  justify-content: flex-end;
   width: 960px;
   height: 100%;
 `
